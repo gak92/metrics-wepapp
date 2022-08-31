@@ -1,5 +1,5 @@
 import React from 'react';
-import Company from './Company.js';
+import Company from './Company';
 
 const Companies = () => {
   const companiesList = [{
