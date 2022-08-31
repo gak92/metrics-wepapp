@@ -10,8 +10,8 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/details" exact="true" element={<CompanyDetails />} />
         <Route path="/" element={<Companies />} />
+        <Route path="/:symbol" element={<CompanyDetails />} />
       </Routes>
     </div>
   );

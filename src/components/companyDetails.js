@@ -44,10 +44,11 @@ function CompanyDetails() {
 
   return (
     <div>
-      <p>{details.symbol}</p>
-      <p>{details.companyName}</p>
-      <p>{details.price}</p>
-      <p>{details.description}</p>
+      <h1>This is company details page</h1>
+      <p>{details[0].symbol}</p>
+      <p>{details[0].companyName}</p>
+      <p>{details[0].price}</p>
+      <p>{details[0].description}</p>
     </div>
   );
 }
