@@ -185,7 +185,7 @@ const Companies = () => {
   }];
 
   return (
-    <div>
+    <div className="d-flex flex-wrap gap-1">
       {
         companiesList.map((company) => (
           <Company
