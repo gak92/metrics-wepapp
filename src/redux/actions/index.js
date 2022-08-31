@@ -7,11 +7,13 @@ const BASE_URL = 'https://financialmodelingprep.com/api/v3';
 const REQUESTED_URL = `${BASE_URL}/stock_market/actives?apikey=${API_KEY}}`;
 
 // Actions
-export const getCompanies = createAsyncThunk(
-  GET_COMPANIES,
+const getCompanies = createAsyncThunk(
+  actions.GET_COMPANIES,
   async () => {
     const { data } = await axios.get(REQUESTED_URL);
     console.log(data);
     return data;
   },
 );
+
+export default getCompanies;
