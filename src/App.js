@@ -1,13 +1,20 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import Companies from './components/Companies';
+import CompanyDetails from './components/CompanyDetails';
 
-const App = () => {
-  const title = 'Metrics Web App';
-
+function App() {
   return (
     <div>
-      {title}
+      <Header />
+      <Routes>
+        <Route path="/details" exact="true" element={<CompanyDetails />} />
+        <Route path="/" element={<Companies />} />
+      </Routes>
     </div>
   );
-};
+}
 
 export default App;
