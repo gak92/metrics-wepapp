@@ -6,6 +6,7 @@ import stockBg from '../images/stock_bg.jpg';
 
 const Company = (props) => {
   const { symbol, name, price } = props;
+  console.log(props);
 
   return (
     <Card className="bg-dark text-white">
