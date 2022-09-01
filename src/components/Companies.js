@@ -10,14 +10,12 @@ const Companies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
-    // console.log(companiesList.length);
     if (companiesList.length === 0) {
       dispatch(getCompanies());
     }
   }, []);
 
   const searchHandler = (event) => {
-    // console.log(event.target.value);
     const searchVal = event.target.value;
     if (searchVal) {
       setSearchParams({ searchVal });
@@ -40,13 +38,8 @@ const Companies = () => {
           companiesList.filter((company) => {
             const companyName = company.name.toLowerCase();
             const searchQuery = searchParams.get('searchVal');
-            // console.log('Search Query: ', !searchQuery);
-            if (searchQuery) {
-              // console.log(companyName.includes(searchQuery));
-              return companyName.includes(searchQuery);
-            }
-            // console.log('All true');
-            return true;
+            const result = searchQuery ? companyName.includes(searchQuery) : true;
+            return result;
           })
             .map((company) => (
               <Company
