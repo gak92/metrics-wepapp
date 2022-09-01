@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux/es/exports';
 import { NavLink, useParams } from 'react-router-dom';
 import { getCompanyDetails } from '../redux/actions';
+import styles from './CompanyDetails.module.css';
 
 const CompanyDetails = () => {
   const dispatch = useDispatch();
@@ -13,9 +14,9 @@ const CompanyDetails = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.whiteText}>
       <NavLink to="/">&larr;</NavLink>
-      <h1>This is company details page</h1>
+      <h1>Company Profile</h1>
       {companyDetails.map(({
         symbol, companyName, price, description,
       }) => (

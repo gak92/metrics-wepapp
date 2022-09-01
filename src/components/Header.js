@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './Header.module.css';
 
 const Header = () => {
-  const heading = 'Stock Companies';
+  const heading = 'Financial Stock Companies';
   return (
-    <div>
+    <h1 className={styles.header}>
       {heading}
-    </div>
+    </h1>
   );
 };
 
