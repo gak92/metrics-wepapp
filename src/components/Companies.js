@@ -38,10 +38,8 @@ const Companies = () => {
           companiesList.filter((company) => {
             const companyName = company.name.toLowerCase();
             const searchQuery = searchParams.get('searchVal');
-            if (searchQuery) {
-              return companyName.includes(searchQuery);
-            }
-            return true;
+            const result = searchQuery ? companyName.includes(searchQuery) : true;
+            return result;
           })
             .map((company) => (
               <Company
