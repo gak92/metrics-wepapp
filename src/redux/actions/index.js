@@ -16,4 +16,14 @@ const getCompanies = createAsyncThunk(
   },
 );
 
-export default getCompanies;
+// https://financialmodelingprep.com/api/v3/profile/AAPL?apikey=914bee6857729bc58d8f8d6ec4224f5d
+const getCompanyDetails = createAsyncThunk(
+  actions.GET_COMPANY_DETAIL,
+  async (symbol) => {
+    const response = await axios.get(`${BASE_URL}/profile/${symbol}?apikey=${API_KEY}`);
+    console.log(response);
+    return response.data;
+  },
+);
+
+export { getCompanies, getCompanyDetails };

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 // import axios from 'axios';
-import getCompanies from '../redux/actions';
+import { getCompanies } from '../redux/actions';
 import Company from './Company';
 
 const Companies = () => {
