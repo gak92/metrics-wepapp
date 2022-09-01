@@ -10,7 +10,7 @@ const Company = (props) => {
   const { symbol, name, price } = props;
 
   return (
-    <Card className="bg-dark text-white" style={{ width: '32%' }}>
+    <Card className="bg-dark text-white overflow-hidden" style={{ width: '32%' }}>
       <NavLink to={`/${symbol}`}>
         <Card.Img src={stockBg} alt="Card image" style={{ opacity: '0.4' }} />
         <Card.ImgOverlay>
