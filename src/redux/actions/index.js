@@ -21,7 +21,7 @@ const getCompanyDetails = createAsyncThunk(
   actions.GET_COMPANY_DETAIL,
   async (symbol) => {
     const response = await axios.get(`${BASE_URL}/profile/${symbol}?apikey=${API_KEY}`);
-    console.log(response);
+    // console.log(response);
     return response.data;
   },
 );
