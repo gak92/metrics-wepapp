@@ -34,7 +34,7 @@ const Companies = () => {
         value={searchParams.keyword}
         onChange={searchHandler}
       />
-      <div className="d-flex flex-wrap gap-1">
+      <div className="d-flex flex-wrap gap-1 justify-content-center">
         {
           companiesList.filter((company) => {
             const companyName = company.name.toLowerCase();
