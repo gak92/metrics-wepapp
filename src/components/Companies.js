@@ -33,6 +33,7 @@ const Companies = () => {
         placeholder="Search company by Name ..."
         value={searchParams.keyword}
         onChange={searchHandler}
+        className="mb-2 w-100"
       />
       <div className="d-flex flex-wrap gap-1 justify-content-center">
         {
