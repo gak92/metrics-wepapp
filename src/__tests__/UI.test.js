@@ -6,7 +6,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Header from '../components/Header';
 import Companies from '../components/Companies';
 import Company from '../components/Company';
-// import ComppanyDetails from '../components/CompanyDetails';
 import store from '../redux/configureStore';
 
 describe('Testing UI', () => {
