@@ -2,8 +2,8 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
-import Header from '../components/Header';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Header from '../components/Header';
 import Companies from '../components/Companies';
 import Company from '../components/Company';
 // import ComppanyDetails from '../components/CompanyDetails';
@@ -14,7 +14,7 @@ describe('Testing UI', () => {
     const tree = render(
       <Router>
         <Header />
-      </Router>
+      </Router>,
     );
     expect(tree).toMatchSnapshot();
   });
@@ -23,7 +23,7 @@ describe('Testing UI', () => {
     render(
       <Router>
         <Header />
-      </Router>
+      </Router>,
     );
 
     const element = screen.getByText('Financial Stock Companies');
@@ -36,7 +36,7 @@ describe('Testing UI', () => {
         <Router>
           <Companies />
         </Router>
-      </Provider>
+      </Provider>,
     );
     expect(tree).toMatchSnapshot();
   });
@@ -47,9 +47,8 @@ describe('Testing UI', () => {
         <Router>
           <Company />
         </Router>
-      </Provider>
+      </Provider>,
     );
     expect(tree).toMatchSnapshot();
   });
-
 });
