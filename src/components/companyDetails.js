@@ -6,10 +6,10 @@ import { getCompanyDetails } from '../redux/actions';
 const CompanyDetails = () => {
   const dispatch = useDispatch();
   const companyDetails = useSelector((state) => state.companyDetailsReducer);
-  console.log('Company Details: ', companyDetails);
+  // console.log('Company Details: ', companyDetails);
 
   const { symbol } = useParams();
-  console.log('Symbol: ', symbol);
+  // console.log('Symbol: ', symbol);
 
   useEffect(() => {
     dispatch(getCompanyDetails(symbol));
@@ -29,10 +29,6 @@ const CompanyDetails = () => {
           <p>{description}</p>
         </div>
       ))}
-      {/* <p>{companyDetails[0].symbol}</p>
-      <p>{companyDetails[0].companyName}</p>
-      <p>{companyDetails[0].price}</p>
-      <p>{companyDetails[0].description}</p> */}
     </div>
   );
 };
