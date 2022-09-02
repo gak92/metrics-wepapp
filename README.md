@@ -66,6 +66,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Original design idea by [Nelson Sakwa on Behance](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)?tracking_source=>)
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
