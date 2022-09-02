@@ -20,6 +20,7 @@
 ## Live Demo
 
 [Live Demo](https://stock-metrics-webapp.netlify.app/)
+[Video Demo](https://www.loom.com/share/d816f2ac60b042b0b0c360c7a366e2a3)
 
 ## Getting Started
 
